@@ -916,7 +916,7 @@ static void refine_edges(apriltag_detector_t *td, image_u8_t *im_orig, struct qu
     }
 }
 
-static void quad_decode_task(void *_u)
+void quad_decode_task(void *_u)
 {
     struct quad_decode_task *task = (struct quad_decode_task*) _u;
     apriltag_detector_t *td = task->td;
